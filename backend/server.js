@@ -23,8 +23,8 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// We will import your actual Ticket routes here later
-// app.use('/api/tickets', require('./routes/ticketRoutes'));
+// Connect the Ticket API routes
+app.use('/api/tickets', require('./routes/ticketRoutes'));
 
 // Start the Server
 const PORT = process.env.PORT || 5000;
