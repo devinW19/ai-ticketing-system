@@ -1,9 +1,7 @@
 // src/App.jsx
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import UserPortal from './pages/UserPortal';
-
-// We will build these next!
-const AdminDashboard = () => <div style={{ padding: '2rem' }}><h2>IT Support Dashboard</h2><p>Ticket table coming soon...</p></div>;
+import AdminDashboard from './pages/AdminDashboard';
 
 function App() {
   return (
